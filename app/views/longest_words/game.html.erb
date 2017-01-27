@@ -1,0 +1,9 @@
+<h1>LongestWords#game</h1>
+<h2>Les lettres tirées au sort</h2>
+<h2><%= @grid %></h2>
+<form action="/score">
+  <input type="hidden" name="grid" value="<%= @grid %>">
+  <input type="hidden" name="start_time" value="<%= @start_time %>">
+  <input type="text" name="word" placeholder="Type your best guess">
+  <input type="submit">
+</form>
